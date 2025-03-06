@@ -4,21 +4,29 @@ const Hero = () => {
     return (
         <section
             id="hero"
-            className="min-h-screen flex flex-col justify-center items-center bg-gray-800 text-white pt-20"
+            className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gray-800 text-white px-10 pt-20"
         >
-            <div className="text-center">
+            {/* Left Content */}
+            <div className="text-left max-w-lg">
                 <h1 className="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Máté!</h1>
-                <p className="text-xl md:text-2xl mb-6">
+                <p className="text-lg md:text-xl mb-6 text-gray-400">
                     I'm a full-stack software developer and designer whom trying to create something special.
                 </p>
-                <div className="flex justify-center space-x-4">
+                <a href="/CV_Ivan_Mate_EN.pdf" download>
                     <button type="button"
-                            className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Download
-                        CV
+                            className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br
+                                   focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800
+                                   shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80
+                                   font-medium rounded-lg text-sm px-6 py-3">
+
+                        Download CV
+
                     </button>
-                </div>
+                </a>
             </div>
-            {/* <img src="" alt="profile" className="mt-8 w-48 h-48 object-cover rounded-full" /> */}
+
+            <img src="/self-pic.jpg" alt="profile" className="mt-8 w-85 h-auto object-cover rounded-lg"/>
+
         </section>
     )
 }
