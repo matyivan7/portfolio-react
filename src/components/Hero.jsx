@@ -6,7 +6,6 @@ const Hero = () => {
             id="hero"
             className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gray-800 text-white px-10 pt-20"
         >
-            {/* Left Content */}
             <div className="text-left max-w-lg">
                 <h1 className="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Máté!</h1>
                 <p className="text-lg md:text-xl mb-6 text-gray-400">
