@@ -1,0 +1,55 @@
+.loading-container {
+    position: fixed;
+    inset: 0;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-text {
+    position: relative;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 0;
+}
+
+.loading-text::before {
+    content: 'Loading';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: radial-gradient(
+            circle,
+            #57CA84FF 40%,
+            #57CA84FF 41%,
+            transparent 41%
+    );
+    background-size: 110% 110%;
+    animation: circleMove 1s ease-in-out infinite alternate;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    pointer-events: none;
+}
+
+@keyframes circleMove {
+    100% {
+        background-position: -300% 50%;
+    }
+    0% {
+        background-position: 300% 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .loading-text {
+        font-size: 3rem;
+    }
+}
