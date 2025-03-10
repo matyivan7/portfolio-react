@@ -1,13 +1,16 @@
 import React, {useState} from 'react'
-import {FaBars, FaFlagUsa, FaTimes} from 'react-icons/fa'
+import {FaBars, FaTimes} from 'react-icons/fa'
+import {useTranslation} from "react-i18next";
 
 const Navbar = () => {
     const [navOpen, setNavOpen] = useState(false)
     const [langOpen, setLangOpen] = useState(false);
-    const [language, setLanguage] = useState('English');
+    const [language, setLanguage] = useState('en');
+    const {t, i18n } = useTranslation();
+
     const flags = {
-        'English': '/flags/uk.png',
-        'Magyar': '/flags/hungary.png'
+        en: '/flags/uk.png',
+        hu: '/flags/hungary.png'
     };
 
     const handleToggle = () => {
@@ -21,6 +24,7 @@ const Navbar = () => {
     const changeLanguage = (lang) => {
         setLanguage(lang);
         setLangOpen(false);
+        i18n.changeLanguage(lang);
     };
 
     return (
@@ -34,10 +38,10 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex flex-1 justify-center space-x-8 mr:20px">
-                    <a href="#hero" className="hover:text-gray-300">Home</a>
-                    <a href="#about" className="hover:text-gray-300">About</a>
-                    <a href="#services" className="hover:text-gray-300">Services</a>
-                    <a href="#contact" className="hover:text-gray-300">Contact</a>
+                    <a href="#hero" className="hover:text-gray-300">{t('home')}</a>
+                    <a href="#about" className="hover:text-gray-300">{t('about')}</a>
+                    <a href="#services" className="hover:text-gray-300">{t('services')}</a>
+                    <a href="#contact" className="hover:text-gray-300">{t('contact')}</a>
                 </div>
 
                 <div className="relative">
@@ -45,16 +49,16 @@ const Navbar = () => {
                         onClick={toggleLangMenu}
                         className="flex items-center text-sm px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-700">
                         <img src={flags[language]} alt={language} className="w-5 h-5 mr-2" />
-                        {language}
+                        {language === 'en' ? 'English' : 'Magyar'}
                     </button>
                     {langOpen && (
                         <div className="absolute right-0 mt-2 w-40 bg-gray-200 text-black shadow-lg rounded-md">
-                            <button onClick={() => changeLanguage('English')} className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 w-full text-left">
-                                <img src={flags['English']} alt="English" className="w-5 h-5 mr-2" />
+                            <button onClick={() => changeLanguage('en')} className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 w-full text-left">
+                                <img src={flags['en']} alt="English" className="w-5 h-5 mr-2" />
                                 English
                             </button>
-                            <button onClick={() => changeLanguage('Magyar')} className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 w-full text-left">
-                                <img src={flags['Magyar']} alt="Magyar" className="w-5 h-5 mr-2" />
+                            <button onClick={() => changeLanguage('hu')} className="flex items-center px-4 py-2 rounded-lg hover:bg-gray-300 w-full text-left">
+                                <img src={flags['hu']} alt="Magyar" className="w-5 h-5 mr-2" />
                                 Magyar
                             </button>
                         </div>
