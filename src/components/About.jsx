@@ -12,7 +12,7 @@ const About = () => {
         >
             <div className="max-w-3xl text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('about')}</h2>
-                <p className="text-lg md:text-xl mb-8">
+                <p className="text-lg md:text-xl mb-8 text-justify">
                     {t('about_text')}
                 </p>
             </div>

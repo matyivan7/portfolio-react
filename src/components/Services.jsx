@@ -32,7 +32,7 @@ const Services = () => {
                     <div className="bg-gray-100 shadow p-6 rounded-lg text-center">
                         <FaLaptopCode className="mx-auto text-4xl text-green-500 mb-4"/>
                         <h3 className="text-xl font-semibold mb-2">Frontend Development</h3>
-                        <p className="text-gray-700">
+                        <p className="text-gray-700 text-justify">
                             {t('frontend')}
                         </p>
                     </div>
@@ -40,7 +40,7 @@ const Services = () => {
                     <div className="bg-gray-100 shadow p-6 rounded-lg text-center">
                         <FaGear className="mx-auto text-4xl text-green-500 mb-4"/>
                         <h3 className="text-xl font-semibold mb-2">Backend Development</h3>
-                        <p className="text-gray-700">
+                        <p className="text-gray-700 text-justify">
                             {t('backend')}
                         </p>
                     </div>
@@ -48,7 +48,7 @@ const Services = () => {
                     <div className="bg-gray-100 shadow p-6 rounded-lg text-center">
                         <FaMobileAlt className="mx-auto text-4xl text-green-500 mb-4"/>
                         <h3 className="text-xl font-semibold mb-2">Apps Development</h3>
-                        <p className="text-gray-700">
+                        <p className="text-gray-700 text-justify">
                             {t('apps')}
                         </p>
                     </div>
@@ -59,7 +59,7 @@ const Services = () => {
                         <div className="bg-gray-100 shadow p-6 rounded-lg text-center">
                             <FaDatabase className="mx-auto text-4xl text-green-500 mb-4"/>
                             <h3 className="text-xl font-semibold mb-2">Database Management</h3>
-                            <p className="text-gray-700">
+                            <p className="text-gray-700 text-justify">
                                 {t('database')}
                             </p>
                         </div>
@@ -67,7 +67,7 @@ const Services = () => {
                         <div className="bg-gray-100 shadow p-6 rounded-lg text-center">
                             <FaPaintBrush className="mx-auto text-4xl text-green-500 mb-4"/>
                             <h3 className="text-xl font-semibold mb-2">UI/UX Design</h3>
-                            <p className="text-gray-700">
+                            <p className="text-gray-700 text-justify">
                                 {t('ui')}
                             </p>
                         </div>
@@ -75,7 +75,7 @@ const Services = () => {
                         <div className="bg-gray-100 shadow p-6 rounded-lg text-center">
                             <FaRocket className="mx-auto text-4xl text-green-500 mb-4"/>
                             <h3 className="text-xl font-semibold mb-2">Performance Optimization</h3>
-                            <p className="text-gray-700">
+                            <p className="text-gray-700 text-justify">
                                 {t('performance')}
                             </p>
                         </div>

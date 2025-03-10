@@ -21,9 +21,7 @@ const Hero = () => {
                                    focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800
                                    shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80
                                    font-medium rounded-lg text-sm px-6 py-3">
-
                         {t('download')}
-
                     </button>
                 </a>
             </div>
