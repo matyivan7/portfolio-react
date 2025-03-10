@@ -13,7 +13,7 @@ i18n
                     services: "Services",
                     contact: "Contact",
                     //Hero
-                    me: "Hi, I'm Máté!",
+                    me: "Hi, I'm Iván Máté!",
                     introduction: "I'm a full-stack software developer and designer whom trying to create something special.",
                     download: "Download CV",
                     //Contact
@@ -57,7 +57,7 @@ i18n
                     services: "Szolgáltatások",
                     contact: "Elérhetőség",
                     //Hero
-                    me: "Hello, Máté vagyok!",
+                    me: "Hello, Iván Máté vagyok!",
                     introduction: "Egy full-stack szoftverfejlesztő és dizájner vagyok, aki valami különlegeset szeretne alkotni.",
                     download: "Önéletrajz letöltése",
                     //Contact
