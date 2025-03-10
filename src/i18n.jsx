@@ -41,7 +41,11 @@ i18n
                         "                                different devices and platforms",
                     //About
                     about_me: "About Me",
-                    about_text: "text"
+                    about_text: "I am currently studying Business Informatics at Óbudai University. Alongside my academic pursuits, I work full-time as a full-stack software developer, where I am working on large-scale projects in the railway industry. I am passionate about both technology and business, which is why I chose this field.\n" +
+                        "\n" +
+                        "I’m fluent in English and currently improving my German to further expand my language skills and connect with more global opportunities. In my free time, I enjoy playing chess, a game that sharpens my problem-solving and strategic thinking abilities. I also play tennis, which keeps me active and refreshed.\n" +
+                        "\n" +
+                        "From a very early age, I’ve had a deep love for math and problem-solving, which started with my obsession with the Rubik's Cube. I approach challenges with a calm and focused mindset, always striving for clean and efficient solutions in my work."
 
                 }
             },
@@ -72,7 +76,7 @@ i18n
                     ui: "Képes vagyok modern, látványos és interaktív weboldalak tervezésére, gördülékeny animációkkal és lebilincselő felhasználói élménnyel, amelyek megfelelnek a legújabb dizájntrendeknek.",
                     performance: "Az alkalmazások sebességének és hatékonyságának javítására összpontosítok, optimalizált kódírással és objektumorientált programozási elvek alkalmazásával. Célom a betöltési idők csökkentése és a zökkenőmentes működés biztosítása különböző eszközökön és platformokon.",
                     //About
-                    about_text: "Szöveg"
+                    about_text: "Jelenleg az Óbudai Egyetemen tanulok üzleti informatika szakon. Az egyetemi tanulmányaim mellett teljes munkaidőben full-stack szoftverfejlesztőként dolgozom, ahol nagy léptékű projekteken dolgozom a vasúti iparágban. Mind a technológia, mind az üzlet iránti szenvedélyem motivál, ezért választottam ezt a szakterületet. Jól beszélek angolul, és jelenleg német nyelvtudásomat is fejlesztem, hogy bővítsem a nyelvi készségeimet és szélesebb nemzetközi lehetőségekhez férjek hozzá. Szabadidőmben szívesen játszom sakkot, ami javítja a problémamegoldó és stratégiai gondolkodási képességeimet. Emellett teniszezem is, ami aktívan tart és felfrissít. Már nagyon fiatal koromban megszerettem a matematikát és a problémamegoldást, ami a Rubik-kockával való megszállottságommal kezdődött. A kihívásokat nyugodt és fókuszált gondolkodásmóddal közelítem meg, mindig arra törekszem, hogy hatékony és megfelelő megoldásokat találjak a munkám során."
                 }
             },
         },
