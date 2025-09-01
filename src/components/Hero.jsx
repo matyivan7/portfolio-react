@@ -15,7 +15,7 @@ const Hero = () => {
                 <p className="text-lg md:text-xl mb-6 text-gray-400">
                     {t('introduction')}
                 </p>
-                <a href="/CV_Ivan_Mate_EN.pdf" download>
+                <a href="/Iván-Máte-CV-EN.pdf" download>
                     <button type="button"
                             className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br
                                    focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800
